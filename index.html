@@ -3,18 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Red Salva</title>
-    <style>
-        /* Asegura que el contenido de la página sea responsivo */
+    <title>Fondo Imagen Responsivo</title>
+   <style>
+    /* Fondo predeterminado (para pantallas grandes) */
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width:90%;
+        background: url('fondo-grande.jpg') no-repeat center center;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center center;
+    }
+
+    /* Fondo específico para pantallas pequeñas (móviles) */
+    @media (max-width: 768px) {
         body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            background: url('fondo.svg') no-repeat center center; /* Cargar el SVG como fondo */
-            background-size: cover; /* Asegura que el SVG cubra toda la pantalla */
-            background-attachment: fixed; /* Fija el fondo para que no se desplace al hacer scroll */
+            background: url('fondo-movil.jpg') no-repeat center center;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center center;
         }
-    </style>
+    }
+</style>
 </head>
 <body>
 
