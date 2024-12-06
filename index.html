@@ -1,1 +1,27 @@
-<h1>prueba</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fondo SVG Responsivo</title>
+    <style>
+        /* Asegura que el contenido del SVG sea responsivo */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        .fondo-svg {
+            width: 100%;
+            height: 100vh; /* Ajusta la altura al 100% de la ventana */
+            object-fit: cover; /* Asegura que el contenido se ajuste correctamente */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Insertar el archivo SVG con el objeto -->
+    <object class="fondo-svg" type="image/svg+xml" data="fondo.svg"></object>
+
+</body>
+</html>
